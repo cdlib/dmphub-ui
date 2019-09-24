@@ -5,7 +5,8 @@ module.exports = {
   context: {
     label: {
       for: 'for-test',
-      text: 'Label'
+      text: 'Label',
+      required: true
     }
   }
 };

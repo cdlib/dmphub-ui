@@ -1,0 +1,15 @@
+// ***** Label Element ***** //
+
+label {
+
+  &.required {
+
+    &::before {
+      margin-right: $space1;
+      color: $color-red;
+      content: '*';
+    }
+
+  }
+
+}
