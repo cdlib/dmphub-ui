@@ -1,0 +1,27 @@
+<div class="t-landing">
+  {{ render '@header' }}
+  <main>
+    {{> @heading }}
+    <h3>Data Management Plan</h3>
+    <ul>
+      <li><strong>Created:</strong> {{ landing.created }}</li>
+      <li><strong>Modified:</strong> {{ landing.modified }}</li>
+      <li><strong>Language:</strong> {{ landing.language }}</li>
+      <li><strong>Project Start:</strong> {{ landing.start }}</li>
+      <li><strong>Project End:</strong> {{ landing.end }}</li>
+    </ul>
+    <h3>Abstract</h3>
+    <p>{{ landing.abstract }}</p>
+    <h3>Primary Contact</h3>
+    <ul>
+      <li><strong>Name:</strong> {{ landing.name }}</li>
+      <li>{{ render '@orcid' }}</li>
+      <li><strong>Organization:</strong> {{ landing.organization }} <a href="">https://ror.org/01an7q238</a></li>
+    </ul>
+    <h3>Funding</h3>
+    <p>{{ landing.funding }} <a href="">https://doi.org/10.13039/100000203</a></p>
+    <strong>Recommend using accordion affect to show/hide sections instead of a tab interface for better UX and accessibility.</strong>
+    <p></p>
+  </main>
+  {{ render '@footer' }}
+</div>
