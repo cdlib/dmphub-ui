@@ -6,6 +6,7 @@ module.exports = {
     label: {
       for: 'c-description',
       text: 'Please Describe',
+      textarea: true
     },
     textarea: {
       id: 'c-description'
