@@ -27,11 +27,57 @@
   }
 
   &__fields {
+    
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    grid-gap: $space3 $space1;
 
-    > * {
-      margin-bottom: $space3;
+    label {
+      justify-self: end;
+      grid-column: 1;
+
+      &:not(.textarea) {
+        align-self: center;
+      }
+
+    }
+
+    a,
+    button,
+    fieldset,
+    input,
+    select,
+    textarea,
+    > div {
+      grid-column: 2 / 4;
+    }
+
+    button,
+    input,
+    select {
+      justify-self: start;
+    }
+
+    input[type='checkbox'] {
+      grid-column: 2;
+
+      + label {
+        grid-column: 3;
+        justify-self: start;
+      }
+
+    }
+
+    h3 {
+      grid-column: 1 / 4;
     }
 
   }
 
+}
+
+.c-ethicsreport {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  grid-gap: $space3 $space1;
 }
