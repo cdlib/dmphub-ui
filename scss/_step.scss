@@ -27,9 +27,44 @@
   }
 
   &__fields {
+    
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    grid-gap: $space3 $space1;
+    justify-items: start;
 
     > * {
-      margin-bottom: $space3;
+      grid-column: 2 / 4;
+    }
+
+    label {
+      justify-self: end;
+      grid-column: 1;
+
+      &:not(.textarea) {
+        align-self: center;
+      }
+
+    }
+
+    input[type='checkbox'] {
+      grid-column: 2;
+
+      + label {
+        grid-column: 3;
+        justify-self: start;
+      }
+
+    }
+
+    textarea,
+    .c-fieldgroup {
+      justify-self: stretch;
+    }
+
+    h3 {
+      margin: 0;
+      grid-column: 1 / 4;
     }
 
   }
