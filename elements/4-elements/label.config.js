@@ -6,6 +6,7 @@ module.exports = {
     label: {
       for: 'for-test',
       text: 'Label',
+      textarea: false,
       required: true
     }
   }
