@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DMPHub UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="../../ui-assets/css/main.css" media="all">
+  </head>
+  <body>
+  <div class="t-step">
+  <header class="c-header">
+  <a class="c-logo" href="/">
+  <img src="../../ui-assets/images/dmphub_logo.svg" alt="DMP Hub logo">
+</a>
+
+  <h1 >
+    DMP Hub
+  </h1>
+</header>
+
+  <main>
+    <h2 >
+      Project
+    </h2>
+    <div class="c-intro">
+      Tell us about your research project:
+    </div>
+    <div class="c-required">
+  required fields
+</div>
+
+    <div class="t-step__fields">
+      <label for="c-title" class="required">Title</label>
+<input id="c-title" name="" type="text" value="" placeholder="" list="" pattern="" min="" max=""    required>
+
+      
+<label for="c-abstract" class="textarea">Abstract</label>
+<textarea id="c-abstract" name=""  placeholder=""  ></textarea>
+
+      <label for="c-startdate" class="required">Start Date</label>
+<input id="c-startdate" name="" type="date" value="" placeholder="" list="" pattern="" min="" max=""    required>
+
+      <label for="c-enddate" class="required">End Date</label>
+<input id="c-enddate" name="" type="date" value="" placeholder="" list="" pattern="" min="" max=""    required>
+
+      <label for="c-funder" class="">Funder</label>
+<input id="c-funder" name="" type="text" value="" placeholder="" list="funder-list" pattern="" min="" max=""    >
+<datalist id="funder-list">
+  <option value="Licensed Fresh Salad">
+  <option value="Sleek Frozen Chips">
+  <option value="Tasty Plastic Bike">
+  <option value="Incredible Fresh Mouse">
+  <option value="Practical Frozen Chicken">
+  <option value="Gorgeous Wooden Hat">
+  <option value="Unbranded Wooden Pizza">
+  <option value="Awesome Cotton Towels">
+  <option value="Practical Frozen Sausages">
+  <option value="Refined Concrete Keyboard">
+</datalist>
+
+      <label for="c-fundingstatus" class="">Funding Status</label>
+<select name="" id="c-fundingstatus"   >
+  
+  <option value="1" default>planned</option>
+  <option value="2">applied</option>
+  <option value="3">granted</option>
+  <option value="4">rejected</option>
+</select>
+
+    </div>
+    <nav class="c-progress" aria-label="progress">
+  <a href="">&lt; Previous</a>
+  <ol>
+      <li >Project</li>
+      <li aria-current="step">DMP</li>
+      <li >Datasets</li>
+  </ol>
+  <a href="">Next &gt;</a>
+</nav>
+
+  </main>
+  <footer class="c-footer">
+  <p>DMPHub is a service of the <a href="https://www.cdlib.org/uc3/">University of California Curation Center</a> of the <a href="http://www.cdlib.org">California Digital Library.</a></p>
+  <p>Copyright 2010-2019 The Regents of the University of California.</p>
+</footer>
+
+</div>
+
+  <script src="../../ui-assets/js/main.js"></script>
+  </body>
+</html>
+

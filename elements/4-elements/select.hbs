@@ -1,6 +1,0 @@
-<select name="{{ select.name }}" id="{{ select.id }}" {{#if select.multiple}}multiple{{/if}} {{#if select.required}}required{{/if}} {{#if select.disabled}}disabled{{/if}}>
-  {{#if select.placeholder.exists}}<option value="">{{ select.placeholder.label }}</option>{{/if}}
-  {{#each selectoption}}
-  <option value="{{ select.option.value }}"{{#if select.option.default}} default{{/if}}>{{ select.option.label }}</option>
-  {{/each}}
-</select>
