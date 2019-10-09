@@ -1,9 +1,10 @@
 .DS_Store
+.publish
 dist
 node_modules
 ui-assets
 
-# hardlinked and symlinked from cdlib-ui-kit:
+# copied from cdlib-ui-kit:
 
 browserslist-stats.json
 fractal_subtheme
