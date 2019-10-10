@@ -20,8 +20,22 @@
     </ul>
     <h3>Funding</h3>
     <p>{{ landing.funding }} <a href="">https://doi.org/10.13039/100000203</a></p>
-    <strong>Recommend using accordion affect to show/hide sections instead of a tab interface for better UX and accessibility.</strong>
-    <p></p>
+    {{ render '@accordion' }}
+    <h3>Datasets</h3>
+    <ul>
+      <li><strong>Type:</strong> {{ landing.type }}</li>
+      <li><strong>Summary:</strong> {{ landing.summary }}</li>
+      <li><strong>Language:</strong> {{ landing.language }}</li>
+    </ul>
+    {{ render '@accordion--2' }}
+    <h3>Distribution</h3>
+    <ul>
+      <li><strong>Title:</strong> {{ landing.title }}</li>
+      <li><strong>Summary:</strong> {{ landing.summary }}</li>
+      <li><strong>Format:</strong> {{ landing.format }}</li>
+      <li><strong>Byte Size:</strong> {{ landing.size }}</li>
+    </ul>
+    {{ render '@accordion--3' }}
   </main>
   {{ render '@footer' }}
 </div>
