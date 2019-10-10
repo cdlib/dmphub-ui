@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.2.1" type="text/css">
+
+<link rel="stylesheet" href="../../_subtheme/customizations.css?cachebust=1.2.1" type="text/css">
+
+
+<title>Accordion: 3 | DMPHub UI Library</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+        <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+
+    </button>
+    <a href="../../index.html" class="Header-title" data-pjax>DMPHub UI Library</a>
+</div>
+
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+
+    
+    
+
+<div class="Pen" data-behaviour="pen" id="pen-6a66c4a857a6990329d16a41d9ca266c">
+
+    
+
+    <div class="Pen-panel Pen-header">
+    <h1 class="Pen-title">
+        <a class="Pen-previewLink" href="../preview/accordion--3.html" title="Component preview">
+            Accordion: 3
+            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+
+        </a>
+    </h1>
+    
+
+<div class="Status Status--tag">
+
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
+
+</div>
+
+
+</div>
+
+
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-6a66c4a857a6990329d16a41d9ca266c">
+    <div class="Preview-wrapper" data-role="resizer">
+        <div class="Preview-resizer">
+            
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/accordion--3.html"
+                sandbox="allow-same-origin allow-scripts allow-forms allow-modals"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
+        </div>
+        <div class="Preview-handle" data-role="resize-handle"></div>
+        <div class="Preview-overlay"></div>
+    </div>
+</div>
+
+
+    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+
+    <div class="Pen-panel Pen-info" data-role="info">
+    <div class="Browser" data-behaviour="browser" id="browser-6a66c4a857a6990329d16a41d9ca266c">
+
+    
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs">
+        
+        
+        <li class="Browser-tab Browser-tab--notes is-active " data-role="tab">
+            <a href="#browser-6a66c4a857a6990329d16a41d9ca266c-panel-notes">Notes</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--html" data-role="tab">
+            <a href="#browser-6a66c4a857a6990329d16a41d9ca266c-panel-html">HTML</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-6a66c4a857a6990329d16a41d9ca266c-panel-view">View</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--context" data-role="tab">
+            <a href="#browser-6a66c4a857a6990329d16a41d9ca266c-panel-context">Context</a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--info" data-role="tab">
+            <a href="#browser-6a66c4a857a6990329d16a41d9ca266c-panel-info">Info</a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-6a66c4a857a6990329d16a41d9ca266c-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        
+    </div>
+</div>
+
+    
+    
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-6a66c4a857a6990329d16a41d9ca266c-panel-html">
+    <code class="Code Code--lang-html">
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"accordion-distribution"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-accordion"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>Host<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-accordion__section"</span>&gt;</span>
+            Dignissimos eum saepe. Nulla animi sapiente facere et architecto voluptatibus dolores omnis consectetur. Aperiam est similique numquam hic. Culpa ratione blanditiis maiores aut at nobis. Enim reiciendis mollitia. Maiores rerum distinctio eum perferendis
+            non fugiat rem earum reprehenderit. Dolorem unde perferendis non sit quia. Id ab et ad et. Rerum impedit soluta quis aperiam repellendus sapiente consectetur. Quisquam ut aut eligendi dolorem quod placeat velit quod omnis. Assumenda laudantium
+            quia voluptatem ut labore incidunt.
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>Licenses<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-accordion__section"</span>&gt;</span>
+            Perferendis dicta aut quae non facilis eaque. Et et vel ipsam molestiae velit itaque saepe. Debitis nisi facere. Id eius corporis sed sunt ut aut culpa eligendi alias. Natus nemo natus earum magni commodi a. Placeat perferendis molestias in fugit voluptatem.
+            Cupiditate ducimus sit tenetur vel ea tempore. Iste magnam modi ea libero. Quia consectetur id assumenda molestiae. Nobis laudantium est aut occaecati sit debitis. Ducimus voluptas aut dolor voluptatibus voluptatibus occaecati animi. Ipsam
+            voluptas quam consequatur voluptatem ad qui est. Voluptas porro asperiores cupiditate alias occaecati quod ut. Pariatur voluptatem voluptas quidem et aut ea incidunt. Numquam optio nisi provident.
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+        
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-6a66c4a857a6990329d16a41d9ca266c-panel-view">
+    <code class="Code Code--lang-handlebars">
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ accordion.id3 }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-accordion"</span>&gt;</span>
+  </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> accordion3}}</span><span class="xml">
+  <span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span></span><span class="hljs-template-variable">{{ accordion.label }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-accordion__section"</span>&gt;</span>
+      </span><span class="hljs-template-variable">{{ accordion.content }}</span><span class="xml">
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
+  </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">each</span></span>}}</span><span class="xml">
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-6a66c4a857a6990329d16a41d9ca266c-panel-context">
+    <code class="Code Code--lang-json">
+        
+            
+            <pre>{
+  <span class="hljs-attr">"accordion"</span>: {
+    <span class="hljs-attr">"id1"</span>: <span class="hljs-string">"accordion-funding"</span>,
+    <span class="hljs-attr">"id2"</span>: <span class="hljs-string">"accordion-datasets"</span>,
+    <span class="hljs-attr">"id3"</span>: <span class="hljs-string">"accordion-distribution"</span>
+  },
+  <span class="hljs-attr">"accordion1"</span>: [
+    {
+      <span class="hljs-attr">"accordion"</span>: {
+        <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Staff"</span>,
+        <span class="hljs-attr">"content"</span>: <span class="hljs-string">"Illum accusamus quam distinctio aut aut. Sunt quo asperiores et enim voluptatem tempore maiores ut impedit. Placeat autem maxime modi. Architecto quo vero nisi.\n \rEos illo repudiandae consequatur optio laudantium cumque. Ullam doloribus suscipit minus. Nihil expedita nihil impedit.\n \rAmet optio illum quibusdam repudiandae laboriosam dignissimos unde assumenda et. Quo commodi ea sequi omnis. Officia veritatis aut. Sunt dolore sit fuga ut consequatur. Animi corporis provident animi nostrum voluptas autem."</span>
+      }
+    },
+    {
+      <span class="hljs-attr">"accordion"</span>: {
+        <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Ethics"</span>,
+        <span class="hljs-attr">"content"</span>: <span class="hljs-string">"Quidem aut quam ut neque sunt laudantium eligendi. Quas perferendis consectetur omnis. Optio et est. Est sed et qui eum officiis. Sed cum aut. Autem iste omnis explicabo nostrum vitae laborum numquam illo.\n \rRerum dolores dolores expedita et ut facere qui doloremque. Dolorum consequuntur quos rerum voluptatem ut recusandae. Sed officia quam eius.\n \rEst rerum eos. A dolores aperiam provident vel beatae voluptas dicta. Dolorum dolore ut est."</span>
+      }
+    },
+    {
+      <span class="hljs-attr">"accordion"</span>: {
+        <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Cost"</span>,
+        <span class="hljs-attr">"content"</span>: <span class="hljs-string">"Amet ullam a reiciendis suscipit dolorem rerum quibusdam. Dolor est et totam et. Atque itaque numquam quae ratione saepe consequuntur et quia. Tempore eum fugiat earum nisi.\n \rOdit dolor qui amet doloribus. Veniam et vitae et occaecati tenetur possimus odit similique consequatur. Quo esse et voluptatem.\n \rDeleniti sequi et. Qui reiciendis et. Nihil molestiae nemo explicabo voluptatem omnis cum fugiat."</span>
+      }
+    }
+  ],
+  <span class="hljs-attr">"accordion2"</span>: [
+    {
+      <span class="hljs-attr">"accordion"</span>: {
+        <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Overview"</span>,
+        <span class="hljs-attr">"content"</span>: <span class="hljs-string">"Id dolores quo qui ratione. Nihil eum doloremque. Maxime voluptatibus doloremque earum vitae sunt repellendus officiis autem. Eveniet labore nostrum alias in nihil. Vitae voluptate quia veritatis porro repudiandae illo sequi ut.\n \rEt rerum perspiciatis maxime ut iste aut et. Fuga explicabo in non. Omnis reprehenderit repellendus molestias harum et non molestias maiores. Sit natus et.\n \rVoluptatum ut et perferendis nesciunt repudiandae itaque tempore porro. Voluptate consequuntur nihil explicabo mollitia mollitia odit optio debitis omnis. Eaque tempore sed."</span>
+      }
+    },
+    {
+      <span class="hljs-attr">"accordion"</span>: {
+        <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Security and Privacy"</span>,
+        <span class="hljs-attr">"content"</span>: <span class="hljs-string">"Consequatur quibusdam et eveniet reprehenderit quo reprehenderit cum. Accusantium quaerat voluptatem. Rerum deleniti doloremque omnis accusantium voluptatem numquam dolorum itaque.\n \rMolestias a nam placeat hic et et. Error voluptas optio ipsam error ea nam repellat quia. Voluptatem corporis aspernatur non eum recusandae debitis ut et. Eos vel sed harum dolore quidem perferendis.\n \rVelit in pariatur commodi velit dolorem voluptatem dolores rerum qui. Voluptatum qui non id voluptatum quis sit. Rem incidunt quae totam quisquam natus consequatur voluptas aut ut."</span>
+      }
+    },
+    {
+      <span class="hljs-attr">"accordion"</span>: {
+        <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Technical Resources"</span>,
+        <span class="hljs-attr">"content"</span>: <span class="hljs-string">"Dolor quia dolorem expedita architecto est aut soluta molestiae natus. Dolorum eum culpa delectus quasi quia itaque quidem exercitationem. Nesciunt quas neque cupiditate. Aliquam ea quia.\n \rOptio provident illum. Dolore itaque ipsum. Aut perferendis et aliquam nesciunt voluptatem optio. Rem qui occaecati.\n \rOmnis accusantium est. Eos esse repudiandae laudantium. Deserunt rerum sapiente dolorum. Quae dolor cumque quibusdam qui dolorum autem ex. Quos voluptate qui. Porro ab minima consequatur perspiciatis."</span>
+      }
+    },
+    {
+      <span class="hljs-attr">"accordion"</span>: {
+        <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Metadata"</span>,
+        <span class="hljs-attr">"content"</span>: <span class="hljs-string">"Exercitationem atque non ipsam dolorem. Quia quod doloremque cumque odit nobis ut et iusto nam. Rerum repellat qui odio perferendis error natus. Maiores aut ipsa doloremque fugit inventore facilis. Vitae eius sapiente odit voluptates. Sit error dignissimos ut nesciunt nam non amet sequi est.\n \rQui ipsum quod ratione aliquam itaque. Dolor aspernatur consequuntur ut deserunt quas dignissimos accusantium. Rem sunt harum sit. Non aut placeat consequuntur vel et non aut. Cum laborum minima numquam sed illum consectetur quo doloribus. Inventore quod minus aperiam.\n \rMagni voluptatum corporis. Veritatis culpa optio sit ipsum. Et ratione quod ea rerum et adipisci nostrum quasi voluptas. Quo sint rem. Est rerum sit aut rerum officia nobis libero quam."</span>
+      }
+    },
+    {
+      <span class="hljs-attr">"accordion"</span>: {
+        <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Distributions"</span>,
+        <span class="hljs-attr">"content"</span>: <span class="hljs-string">"Velit molestiae non nobis. Et quae non et perferendis. Blanditiis quidem ullam ut quia ea. Et explicabo excepturi adipisci eveniet tempore nihil. Ut quos sit ut culpa atque. Accusamus nisi nam porro commodi.\n \rBlanditiis facilis dolor et itaque dolorum natus. Voluptas ratione odio ipsa porro. Excepturi quis fugiat dolore in amet animi voluptate nihil.\n \rQui id facilis doloribus reprehenderit aliquam nostrum sunt quod adipisci. Explicabo dolores rerum suscipit occaecati dolore qui quo numquam nostrum. Molestiae sint sint harum beatae saepe dolorem."</span>
+      }
+    }
+  ],
+  <span class="hljs-attr">"accordion3"</span>: [
+    {
+      <span class="hljs-attr">"accordion"</span>: {
+        <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Host"</span>,
+        <span class="hljs-attr">"content"</span>: <span class="hljs-string">"Dignissimos eum saepe. Nulla animi sapiente facere et architecto voluptatibus dolores omnis consectetur. Aperiam est similique numquam hic.\n \rCulpa ratione blanditiis maiores aut at nobis. Enim reiciendis mollitia. Maiores rerum distinctio eum perferendis non fugiat rem earum reprehenderit. Dolorem unde perferendis non sit quia.\n \rId ab et ad et. Rerum impedit soluta quis aperiam repellendus sapiente consectetur. Quisquam ut aut eligendi dolorem quod placeat velit quod omnis. Assumenda laudantium quia voluptatem ut labore incidunt."</span>
+      }
+    },
+    {
+      <span class="hljs-attr">"accordion"</span>: {
+        <span class="hljs-attr">"label"</span>: <span class="hljs-string">"Licenses"</span>,
+        <span class="hljs-attr">"content"</span>: <span class="hljs-string">"Perferendis dicta aut quae non facilis eaque. Et et vel ipsam molestiae velit itaque saepe. Debitis nisi facere. Id eius corporis sed sunt ut aut culpa eligendi alias. Natus nemo natus earum magni commodi a.\n \rPlaceat perferendis molestias in fugit voluptatem. Cupiditate ducimus sit tenetur vel ea tempore. Iste magnam modi ea libero. Quia consectetur id assumenda molestiae.\n \rNobis laudantium est aut occaecati sit debitis. Ducimus voluptas aut dolor voluptatibus voluptatibus occaecati animi. Ipsam voluptas quam consequatur voluptatem ad qui est. Voluptas porro asperiores cupiditate alias occaecati quod ut. Pariatur voluptatem voluptas quidem et aut ea incidunt. Numquam optio nisi provident."</span>
+      }
+    }
+  ]
+}</pre>
+            
+        
+    </code>
+</div>
+
+    
+    
+
+
+    
+    <div class="Browser-panel" data-role="tab-panel" id="browser-6a66c4a857a6990329d16a41d9ca266c-panel-info">
+    <ul class="Meta">
+        <li class="Meta-item">
+            <strong class="Meta-key">Handle:</strong>
+            <span class="Meta-value">@accordion--3</span>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Variants <em class="Meta-count">(3)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="accordion--1.html">
+                    <span>1</span>
+                </a>, 
+            
+                <a href="accordion--2.html">
+                    <span>2</span>
+                </a>, 
+            
+                <a href="">
+                    <span>3</span>
+                </a>
+            
+            </span>
+        </li>
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Preview:</strong>
+            <span class="Meta-value">
+                <ul>
+                    <li><a data-no-pjax href="../preview/accordion--3.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                    <li><a data-no-pjax href="../render/accordion--3.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                </ul>
+            </span>
+        </li>
+        <li class="Meta-item">
+            <strong class="Meta-key">Filesystem Path:</strong>
+            <span class="Meta-value">elements/3-components/accordion--3.hbs</span>
+        </li>
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(1)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="landing.html">@<span>landing</span></a>
+            
+            </span>
+        </li>
+        
+    </ul>
+</div>
+
+    
+
+</div>
+
+</div>
+
+
+    
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+        
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <h3 class="Tree-title">components</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-pages">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Pages</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="datasets.html" data-pjax>
+                <span>Datasets</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="dmp.html" data-pjax>
+                <span>DMP</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="landing.html" data-pjax>
+                <span>Landing</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="project.html" data-pjax>
+                <span>Project</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-templates">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Templates</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="step.html" data-pjax>
+                <span>Step</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-components">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Components</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="abstract.html" data-pjax>
+                <span>Abstract</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="accordion.html" data-pjax>
+                <span>Accordion</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="contributor.html" data-pjax>
+                <span>Contributor Type</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="description.html" data-pjax>
+                <span>Description</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="description2.html" data-pjax>
+                <span>Description 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="email.html" data-pjax>
+                <span>Email</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="enddate.html" data-pjax>
+                <span>End Date</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="ethical.html" data-pjax>
+                <span>Ethical</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="ethicsreport.html" data-pjax>
+                <span>Ethics Report</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="fieldgroup.html" data-pjax>
+                <span>Field Group</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="footer.html" data-pjax>
+                <span>Footer</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="funder.html" data-pjax>
+                <span>Funder</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="fundingstatus.html" data-pjax>
+                <span>Funding Status</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="grantid.html" data-pjax>
+                <span>Grant ID</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="header.html" data-pjax>
+                <span>Header</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="host.html" data-pjax>
+                <span>Host</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="intro.html" data-pjax>
+                <span>Introduction</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="keywords.html" data-pjax>
+                <span>Keywords</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="language.html" data-pjax>
+                <span>Language</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="logo.html" data-pjax>
+                <span>Logo</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="name.html" data-pjax>
+                <span>Name</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="orcid.html" data-pjax>
+                <span>Orcid</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="orcidfield.html" data-pjax>
+                <span>Orcid Field</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="organization.html" data-pjax>
+                <span>Organization</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="personal.html" data-pjax>
+                <span>Personal</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="primary.html" data-pjax>
+                <span>Primary Contact</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="progress.html" data-pjax>
+                <span>Progress</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="report.html" data-pjax>
+                <span>Report</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="required.html" data-pjax>
+                <span>Required</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="sensitive.html" data-pjax>
+                <span>Sensitive</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="startdate.html" data-pjax>
+                <span>Start Date</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="summary.html" data-pjax>
+                <span>Summary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="title.html" data-pjax>
+                <span>Title</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="title2.html" data-pjax>
+                <span>Title 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="type.html" data-pjax>
+                <span>Type</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-elements">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Elements</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button.html" data-pjax>
+                <span>Buttons</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="datalist.html" data-pjax>
+                <span>Datalist</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heading.html" data-pjax>
+                <span>Heading</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="input.html" data-pjax>
+                <span>Input</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="label.html" data-pjax>
+                <span>Label</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="link.html" data-pjax>
+                <span>Link</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="select.html" data-pjax>
+                <span>Select</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="textarea.html" data-pjax>
+                <span>Textarea</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+
+
+    
+
+
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.1"></script>
+
+
+
+</body>
+</html>
