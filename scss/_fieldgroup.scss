@@ -1,10 +1,17 @@
 // ***** Field Group Component ***** //
 
 .c-fieldgroup {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  grid-gap: $space3 $space1;
+  justify-items: start;
+
+  > * {
+    grid-column: 2 / 4;
+  }
 
   &__label {
-    display: inline-block;
-    margin-bottom: $space3;
+    grid-column: 1 / 4;
   }
   
 }
