@@ -1,6 +1,7 @@
 // ***** Label Element ***** //
 
 label {
+  @include u-form-label;
 
   &.required {
 
