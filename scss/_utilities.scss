@@ -15,6 +15,12 @@ $test3: rgb(0, 255, 0) solid 1px; // green
   left: -9999px;
 }
 
+// Form labels:
+
+@mixin u-form-label {
+  font-weight: 600;
+}
+
 // Lists without space or bullets:
 
 @mixin u-reset-list-styles {
