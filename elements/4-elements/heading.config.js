@@ -9,6 +9,8 @@ function toTitleCase(str) {
 }
 
 module.exports = {
+  collated: true,
+  default: 'Heading Level 1',
   label: 'Heading',
   context: {
     heading: {
@@ -16,5 +18,23 @@ module.exports = {
       id: 'test-id',
       text: toTitleCase(faker.lorem.words(6))
     }
-  }
+  },
+  variants: [
+    {
+      name: 'Heading Level 2',
+      context: {
+        heading: {
+          level: '2'
+        }
+      }
+    },
+    {
+      name: 'Heading Level 3',
+      context: {
+        heading: {
+          level: '3'
+        }
+      }
+    }
+  ]
 }
