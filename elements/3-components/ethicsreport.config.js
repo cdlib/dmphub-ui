@@ -5,7 +5,7 @@ module.exports = {
   context: {
     ethicsreport: {
       id: 'component-id',
-      arialabelledby: 'checkbox-id'
+      arialabelledby: 'c-ethical__label'
     }
   }
 }
