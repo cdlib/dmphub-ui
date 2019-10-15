@@ -4,7 +4,7 @@ module.exports = {
   label: 'Ethics Report',
   context: {
     ethicsreport: {
-      id: 'component-id',
+      id: 'c-ethicsreport',
       arialabelledby: 'c-ethical__label'
     }
   }
