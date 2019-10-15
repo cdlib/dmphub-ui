@@ -164,8 +164,8 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-a93b4f856f2445301237805d6e79ca5f-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"c-ethical"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">""</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> <span class="hljs-attr">list</span>=<span class="hljs-string">""</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">""</span> <span class="hljs-attr">min</span>=<span class="hljs-string">""</span> <span class="hljs-attr">max</span>=<span class="hljs-string">""</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"c-ethical"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">""</span>&gt;</span>Any ethical concerns?<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"c-ethical"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">""</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">""</span> <span class="hljs-attr">list</span>=<span class="hljs-string">""</span> <span class="hljs-attr">pattern</span>=<span class="hljs-string">""</span> <span class="hljs-attr">min</span>=<span class="hljs-string">""</span> <span class="hljs-attr">max</span>=<span class="hljs-string">""</span> <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">"c-ethicsreport"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"c-ethical__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"c-ethical"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">""</span>&gt;</span>Any ethical concerns?<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -185,12 +185,14 @@
             
             <pre>{
   <span class="hljs-attr">"label"</span>: {
+    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"c-ethical__label"</span>,
     <span class="hljs-attr">"for"</span>: <span class="hljs-string">"c-ethical"</span>,
     <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Any ethical concerns?"</span>
   },
   <span class="hljs-attr">"input"</span>: {
     <span class="hljs-attr">"id"</span>: <span class="hljs-string">"c-ethical"</span>,
-    <span class="hljs-attr">"type"</span>: <span class="hljs-string">"checkbox"</span>
+    <span class="hljs-attr">"type"</span>: <span class="hljs-string">"checkbox"</span>,
+    <span class="hljs-attr">"ariacontrols"</span>: <span class="hljs-string">"c-ethicsreport"</span>
   }
 }</pre>
             

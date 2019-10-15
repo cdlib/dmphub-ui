@@ -23,10 +23,10 @@
 </div>
 
     <div class="t-step__fields">
-      <label for="c-summary" class="textarea">Summary</label>
+      <label id="" for="c-summary" class="textarea">Summary</label>
 <textarea id="c-summary" name=""  placeholder=""  ></textarea>
 
-      <label for="c-language" class="required">Language</label>
+      <label id="" for="c-language" class="required">Language</label>
 <select name="" id="c-language"  required >
   
   <option value="1" default>English</option>
@@ -35,25 +35,25 @@
   <option value="4">German</option>
 </select>
 
-      <input id="c-ethical" name="" type="checkbox" value="" placeholder="" list="" pattern="" min="" max=""    >
-<label for="c-ethical" class="">Any ethical concerns?</label>
+      <input id="c-ethical" name="" type="checkbox" value="" placeholder="" list="" pattern="" min="" max="" aria-controls="c-ethicsreport"    >
+<label id="c-ethical__label" for="c-ethical" class="">Any ethical concerns?</label>
 
-      <div id="component-id" class="c-fieldgroup" role="group" aria-labelledby="checkbox-id">
-  <label for="c-description" class="textarea">Please Describe</label>
+      <div id="c-ethicsreport" class="c-fieldgroup" role="group" aria-labelledby="c-ethical__label">
+  <label id="" for="c-description" class="textarea">Please Describe</label>
 <textarea id="c-description" name=""  placeholder=""  ></textarea>
 
-  <label for="c-report" class="">Report</label>
-<input id="c-report" name="" type="url" value="" placeholder="" list="" pattern="" min="" max=""    >
+  <label id="" for="c-report" class="">Report</label>
+<input id="c-report" name="" type="url" value="" placeholder="" list="" pattern="" min="" max="" aria-controls=""    >
 
 </div>
 
       <div id="primary-id" class="c-fieldgroup" aria-labelledby="primary-fieldgroup-label" role="group">
   <span id="primary-fieldgroup-label" class="c-fieldgroup__label">Primary Contact</span>
-  <label for="c-name1" class="required">Name</label>
-<input id="c-name1" name="" type="text" value="" placeholder="" list="" pattern="" min="" max=""    required>
+  <label id="" for="c-name1" class="required">Name</label>
+<input id="c-name1" name="" type="text" value="" placeholder="" list="" pattern="" min="" max="" aria-controls=""    required>
 
-  <label for="c-email" class="required">Email</label>
-<input id="c-email" name="" type="email" value="" placeholder="" list="" pattern="" min="" max=""    required>
+  <label id="" for="c-email" class="required">Email</label>
+<input id="c-email" name="" type="email" value="" placeholder="" list="" pattern="" min="" max="" aria-controls=""    required>
 
   <a id="c-orcid" class="c-orcid required" href="https://orcid.org/0000-0001-5727-2427">https://orcid.org/0000-0001-5727-2427</a>
 
@@ -62,7 +62,7 @@
       <h3>Other Staff (add/remove functionality coming soon)</h3>
       <button id="button-id2" class="e-button2" aria-label="Add" >Add</button>
 
-      <label for="c-contributor" class="required">Contributor Type</label>
+      <label id="" for="c-contributor" class="required">Contributor Type</label>
 <select name="" id="c-contributor"  required >
   
   <option value="1" default>author</option>
@@ -70,14 +70,14 @@
   <option value="3">curator</option>
 </select>
 
-      <label for="c-name1" class="required">Name</label>
-<input id="c-name1" name="" type="text" value="" placeholder="" list="" pattern="" min="" max=""    required>
+      <label id="" for="c-name1" class="required">Name</label>
+<input id="c-name1" name="" type="text" value="" placeholder="" list="" pattern="" min="" max="" aria-controls=""    required>
 
-      <label for="c-email" class="required">Email</label>
-<input id="c-email" name="" type="email" value="" placeholder="" list="" pattern="" min="" max=""    required>
+      <label id="" for="c-email" class="required">Email</label>
+<input id="c-email" name="" type="email" value="" placeholder="" list="" pattern="" min="" max="" aria-controls=""    required>
 
-      <label for="orcid-field" class="">ORCID</label>
-<input id="orcid-field" name="" type="text" value="" placeholder="" list="" pattern="" min="" max=""    >
+      <label id="" for="orcid-field" class="">ORCID</label>
+<input id="orcid-field" name="" type="text" value="" placeholder="" list="" pattern="" min="" max="" aria-controls=""    >
 
       <button id="button-id3" class="e-button3" aria-label="Remove" >Remove</button>
 
