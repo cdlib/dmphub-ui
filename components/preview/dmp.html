@@ -44,7 +44,7 @@
   <option value="4">German</option>
 </select>
 
-      <input id="c-ethical" name="" type="checkbox" value="" placeholder="" list="" pattern="" min="" max="" aria-controls="c-ethicsreport"    >
+      <input id="c-ethical" name="" type="checkbox" value="" placeholder="" list="" pattern="" min="" max=""    >
 <label id="c-ethical__label" for="c-ethical" class="">Any ethical concerns?</label>
 
       <div id="c-ethicsreport" class="c-fieldgroup" role="group" aria-labelledby="c-ethical__label">
@@ -52,25 +52,26 @@
 <textarea id="c-description" name=""  placeholder=""  ></textarea>
 
   <label id="" for="c-report" class="">Report</label>
-<input id="c-report" name="" type="url" value="" placeholder="" list="" pattern="" min="" max="" aria-controls=""    >
+<input id="c-report" name="" type="url" value="" placeholder="" list="" pattern="" min="" max=""    >
 
 </div>
 
       <div id="primary-id" class="c-fieldgroup" aria-labelledby="primary-fieldgroup-label" role="group">
   <span id="primary-fieldgroup-label" class="c-fieldgroup__label">Primary Contact</span>
   <label id="" for="c-name1" class="required">Name</label>
-<input id="c-name1" name="" type="text" value="" placeholder="" list="" pattern="" min="" max="" aria-controls=""    required>
+<input id="c-name1" name="" type="text" value="" placeholder="" list="" pattern="" min="" max=""    required>
 
   <label id="" for="c-email" class="required">Email</label>
-<input id="c-email" name="" type="email" value="" placeholder="" list="" pattern="" min="" max="" aria-controls=""    required>
+<input id="c-email" name="" type="email" value="" placeholder="" list="" pattern="" min="" max=""    required>
 
   <a id="c-orcid" class="c-orcid required" href="https://orcid.org/0000-0001-5727-2427">https://orcid.org/0000-0001-5727-2427</a>
 
 </div>
 
-      <h3>Other Staff (add/remove functionality coming soon)</h3>
-      <button id="button-id2" class="e-button2" aria-label="Add" >Add</button>
-
+      <h3>Other Staff</h3>
+      <div class="c-other">
+  <template>
+    <div class="c-other__fieldgroup" role="group" aria-label="fieldset">
       <label id="" for="c-contributor" class="required">Contributor Type</label>
 <select name="" id="c-contributor"  required >
   
@@ -80,15 +81,21 @@
 </select>
 
       <label id="" for="c-name1" class="required">Name</label>
-<input id="c-name1" name="" type="text" value="" placeholder="" list="" pattern="" min="" max="" aria-controls=""    required>
+<input id="c-name1" name="" type="text" value="" placeholder="" list="" pattern="" min="" max=""    required>
 
       <label id="" for="c-email" class="required">Email</label>
-<input id="c-email" name="" type="email" value="" placeholder="" list="" pattern="" min="" max="" aria-controls=""    required>
+<input id="c-email" name="" type="email" value="" placeholder="" list="" pattern="" min="" max=""    required>
 
       <label id="" for="orcid-field" class="">ORCID</label>
-<input id="orcid-field" name="" type="text" value="" placeholder="" list="" pattern="" min="" max="" aria-controls=""    >
+<input id="orcid-field" name="" type="text" value="" placeholder="" list="" pattern="" min="" max=""    >
 
-      <button id="button-id3" class="e-button3" aria-label="Remove" >Remove</button>
+      <button id="" class="e-button3" aria-label=""  hidden>Remove</button>
+    </div>
+  </template>
+  <div class="c-other__fields">
+  </div>
+  <button id="button-add" class="e-button2" aria-label=""  >Add Another Staff</button>
+</div>
 
     </div>
     <nav class="c-progress" aria-label="progress">
