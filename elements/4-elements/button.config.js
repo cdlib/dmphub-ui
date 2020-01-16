@@ -8,6 +8,7 @@ module.exports = {
     button: {
       id: 'button-id1',
       text: 'Generic',
+      type: 'button',
       arialabel: '',
       disabled: false,
       hidden: false

@@ -6,12 +6,14 @@ module.exports = {
     button2: {
       button: {
         id: 'button-add',
+        type: 'button',
         text: 'Add Another Staff'
       }
     },
     button3: {
       button: {
-        text: 'Remove This Staff'
+        text: 'Remove This Staff',
+        type: 'button'
       }
     }
   }
