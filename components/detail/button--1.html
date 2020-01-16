@@ -164,7 +164,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-0ca59edd8097cc447164dc494399f3b5-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"button-id1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"e-button1"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">""</span>&gt;</span>Generic<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"button-id1"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"e-button1"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">""</span>&gt;</span>Generic<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -172,7 +172,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-0ca59edd8097cc447164dc494399f3b5-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ button.id }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"e-button1"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ button.arialabel }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> </span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> button.disabled}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-attr">disabled</span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag">&gt;</span></span><span class="hljs-template-variable">{{ button.text }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span></pre>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ button.id }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"e-button1"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ button.type }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ button.arialabel }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> </span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> button.disabled}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-attr">disabled</span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag">&gt;</span></span><span class="hljs-template-variable">{{ button.text }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -185,6 +185,7 @@
   <span class="hljs-attr">"button"</span>: {
     <span class="hljs-attr">"id"</span>: <span class="hljs-string">"button-id1"</span>,
     <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Generic"</span>,
+    <span class="hljs-attr">"type"</span>: <span class="hljs-string">"button"</span>,
     <span class="hljs-attr">"arialabel"</span>: <span class="hljs-string">""</span>,
     <span class="hljs-attr">"disabled"</span>: <span class="hljs-literal">false</span>,
     <span class="hljs-attr">"hidden"</span>: <span class="hljs-literal">false</span>
