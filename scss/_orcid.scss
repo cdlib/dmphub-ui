@@ -3,27 +3,24 @@
 .c-orcid {
   display: inline-block;
   position: relative;
-  padding-left: 1.6em;
+  padding-inline-start: 1.6em;
 
   &::before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 1.1em;
-    margin-right: 1em;
     content: url('orcid.svg');
+    position: absolute;
+    width: 1.1em;
+    inset-block: 0;
+    inset-inline-start: 0;
+    margin-inline-end: 1em;
   }
 
   &.required {
 
     &::after {
-      display: inline-block;
-      margin-left: $space1;
-      color: $color-red;
       content: '*';
+      display: inline-block;
+      color: $color-red;
+      margin-inline-start: $space1;
     }
-
   }
-
 }

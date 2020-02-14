@@ -4,13 +4,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: $space3;
+  margin-block-start: $space3;
 
   ol {
     @include u-reset-list-styles;
     display: flex;
-    margin-right: $space2;
-    margin-left: $space2;
+    margin-inline: $space2;
 
     li {
       display: block;
@@ -21,42 +20,36 @@
       color: $color-white;
       text-align: center;
       clip-path: polygon(0 0, 6rem 0, 100% 50%, 6rem 100%, 0 100%, 1rem 50%);
-      
+
       @supports (clip-path: polygon(0 0)) {
         border-right: none;
       }
 
       // Class set within main.js:
+
       &.completed {
         background-color: $color-green;
 
         span {
           @include u-hide;
         }
-
       }
 
       &:first-child {
 
         @supports (clip-path: polygon(0 0)) {
-          text-align: left;
+          text-align: start;
         }
-        
         clip-path: polygon(0 0, 6rem 0, 100% 50%, 6rem 100%, 0 100%);
-
       }
 
       &:last-child {
 
         @supports (clip-path: polygon(0 0)) {
-          text-align: right;
+          text-align: end;
         }
-
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 1rem 50%);
       }
-
     }
-
   }
-
 }

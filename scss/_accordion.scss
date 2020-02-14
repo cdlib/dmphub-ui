@@ -2,10 +2,10 @@
 
 .c-accordion {
   $left-space: 1.8rem;
-  margin-bottom: $space3;
+  margin-block-end: $space3;
 
   details {
-    margin-bottom: -1px;
+    margin-block-end: -1px;
 
     summary {
       padding: $space1 $space1 $space1 $left-space;
@@ -19,10 +19,10 @@
       user-select: none;
 
       // sass-lint:disable no-vendor-prefixes
+
       &::-webkit-details-marker {
         display: none; // Chrome & Safari
       }
-
     }
 
     &[open] {
@@ -32,15 +32,11 @@
         background-position: left 0.2rem center;
         background-size: 1.4em;
       }
-
     }
-
   }
 
   &__section {
-    margin-top: $space2;
-    margin-bottom: $space2;
-    margin-left: $left-space;
+    margin-block: $space2;
+    margin-inline-start: $left-space;
   }
-
 }

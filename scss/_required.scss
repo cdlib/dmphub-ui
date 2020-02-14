@@ -1,15 +1,14 @@
 // ***** Required Component ***** //
 
 .c-required {
-  margin-bottom: $space3;
-  font-size: .9rem;
+  margin-block-end: $space3;
+  font-size: 0.9rem;
   font-style: italic;
-  text-align: right;
+  text-align: end;
 
   &::before {
-    margin-right: $space1;
-    color: $color-red;
     content: '*';
+    color: $color-red;
+    margin-inline-end: $space1;
   }
-
 }

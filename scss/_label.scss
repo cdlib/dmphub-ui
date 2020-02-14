@@ -6,11 +6,9 @@ label {
   &.required {
 
     &::before {
-      margin-right: $space1;
-      color: $color-red;
       content: '*';
+      color: $color-red;
+      margin-inline-end: $space1;
     }
-
   }
-
 }
