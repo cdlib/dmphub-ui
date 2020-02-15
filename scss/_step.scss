@@ -1,65 +1,58 @@
 // ***** Step Template ***** //
 
-@mixin border {
-  border: 1px solid $color-green;
-}
-
 .t-step {
   display: grid;
   grid-gap: $space2;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+}
 
-  &.highlight-grid {
+.t-step__fields {
+  display: grid;
+  grid-gap: $space3 $space1;
+  grid-template-columns: auto auto 1fr;
+  justify-items: start;
+}
 
-    > * {
-      background: $color-green;
-    }
+.t-step__fields > * {
+  grid-column: 2 / 4;
+}
 
-    main {
+.t-step__fields label {
+  grid-column: 1;
+  justify-self: end;
 
-      > * {
-        background-color: $color-blue;
-      }
-    }
+  &:not(.textarea) {
+    align-self: center;
+  }
+}
+
+.t-step__fields [type='checkbox'] {
+  grid-column: 2;
+
+  + label {
+    grid-column: 3;
+    justify-self: start;
+  }
+}
+
+.t-step__fields textarea,
+.t-step__fields .c-fieldgroup {
+  justify-self: stretch;
+}
+
+.t-step__fields h3 {
+  grid-column: 1 / 4;
+  margin: 0;
+}
+
+.t-step.highlight-grid {
+
+  > * {
+    background: $color-green;
   }
 
-  &__fields {
-    display: grid;
-    grid-gap: $space3 $space1;
-    grid-template-columns: auto auto 1fr;
-    justify-items: start;
-
-    > * {
-      grid-column: 2 / 4;
-    }
-
-    label {
-      grid-column: 1;
-      justify-self: end;
-
-      &:not(.textarea) {
-        align-self: center;
-      }
-    }
-
-    input[type='checkbox'] {
-      grid-column: 2;
-
-      + label {
-        grid-column: 3;
-        justify-self: start;
-      }
-    }
-
-    textarea,
-    .c-fieldgroup {
-      justify-self: stretch;
-    }
-
-    h3 {
-      grid-column: 1 / 4;
-      margin: 0;
-    }
+  main > * {
+    background-color: $color-blue;
   }
 }

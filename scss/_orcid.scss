@@ -13,14 +13,14 @@
     inset-inline-start: 0;
     margin-inline-end: 1em;
   }
+}
 
-  &.required {
+.c-orcid.required {
 
-    &::after {
-      content: '*';
-      display: inline-block;
-      color: $color-red;
-      margin-inline-start: $space1;
-    }
+  &::after {
+    content: '*';
+    display: inline-block;
+    color: $color-red;
+    margin-inline-start: $space1;
   }
 }

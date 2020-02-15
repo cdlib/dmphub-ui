@@ -1,42 +1,36 @@
 // ***** Accordion Component ***** //
 
 .c-accordion {
-  $left-space: 1.8rem;
   margin-block-end: $space3;
+}
 
-  details {
-    margin-block-end: -1px;
+.c-accordion details {
+  margin-block-end: -1px;
+}
 
-    summary {
-      padding: $space1 $space1 $space1 $left-space;
-      border: 1px solid $color-gray;
-      background-image: url('caret-right.svg' param(--color #{$color-green}));
-      background-repeat: no-repeat;
-      background-position: left 0.7rem center;
-      background-size: 0.9em;
-      list-style: none; // Firefox
-      cursor: pointer;
-      user-select: none;
+.c-accordion summary {
+  padding: $space1 $space1 $space1 1.8rem;
+  border: 1px solid $color-gray;
+  background-image: url('caret-right.svg' param(--color #{$color-green}));
+  background-repeat: no-repeat;
+  background-position: left 0.7rem center;
+  background-size: 0.9em;
+  list-style: none; // Firefox
+  cursor: pointer;
+  user-select: none;
 
-      // sass-lint:disable no-vendor-prefixes
-
-      &::-webkit-details-marker {
-        display: none; // Chrome & Safari
-      }
-    }
-
-    &[open] {
-
-      summary {
-        background-image: url('caret-down.svg' param(--color #{$color-green}));
-        background-position: left 0.2rem center;
-        background-size: 1.4em;
-      }
-    }
+  &::-webkit-details-marker {
+    display: none; // Chrome & Safari
   }
+}
 
-  &__section {
-    margin-block: $space2;
-    margin-inline-start: $left-space;
-  }
+.c-accordion [open] summary {
+  background-image: url('caret-down.svg' param(--color #{$color-green}));
+  background-position: left 0.2rem center;
+  background-size: 1.4em;
+}
+
+.c-accordion__section {
+  margin-block: $space2;
+  margin-inline-start: 1.8rem;
 }

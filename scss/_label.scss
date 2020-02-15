@@ -2,13 +2,13 @@
 
 label {
   @include u-form-label;
+}
 
-  &.required {
+label.required {
 
-    &::before {
-      content: '*';
-      color: $color-red;
-      margin-inline-end: $space1;
-    }
+  &::before {
+    content: '*';
+    color: $color-red;
+    margin-inline-end: $space1;
   }
 }
