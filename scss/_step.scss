@@ -49,10 +49,14 @@
 .t-step.highlight-grid {
 
   > * {
-    background: $color-green;
+    border: 3px solid $color-gray;
   }
 
   main > * {
-    background-color: $color-blue;
+    border: 3px solid $color-green;
+  }
+
+  main h2 {
+    color: initial;
   }
 }
