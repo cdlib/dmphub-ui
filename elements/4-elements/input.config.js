@@ -1,6 +1,7 @@
 // ***** Input Element ***** //
 
 module.exports = {
+  preview: '@template-elements',
   label: 'Input',
   context: {
     input: {

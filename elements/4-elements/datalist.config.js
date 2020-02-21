@@ -12,6 +12,7 @@ for (var i = 0; i < 10; i++) {
 }
 
 module.exports = {
+  preview: '@template-elements',
   label: 'Datalist',
   context: {
     datalist: {

@@ -9,6 +9,7 @@ function toTitleCase(str) {
 }
 
 module.exports = {
+  preview: '@template-elements',
   collated: true,
   default: 'Heading Level 1',
   label: 'Heading',

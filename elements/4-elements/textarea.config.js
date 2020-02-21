@@ -1,6 +1,7 @@
 // ***** Textarea Element ***** //
 
 module.exports = {
+  preview: '@template-elements',
   label: 'Textarea',
   context: {
     textarea: {

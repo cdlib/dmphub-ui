@@ -1,6 +1,7 @@
 // ***** Button Elements ***** //
 
 module.exports = {
+  preview: '@template-elements',
   collated: true,
   default: '1',
   label: 'Buttons',

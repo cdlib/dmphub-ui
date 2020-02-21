@@ -3,6 +3,7 @@
 const faker = require('faker/locale/en');
 
 module.exports = {
+  preview: '@template-elements',
   label: 'Link',
   context: {
     link: {
